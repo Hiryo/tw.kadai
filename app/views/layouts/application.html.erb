@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TwKadai</title>
+    <title>Twitter clone</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+    <div class="wrapper">
+      <header>
+        <h1>とぅいったー</h1>
+      </header>
+        <%= yield %>
+      <footer>
+        <h6>Apr 2021 test program</h6>
+      </footer>
+    </div>
   </body>
 </html>
