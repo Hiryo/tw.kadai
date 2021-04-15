@@ -1,0 +1,21 @@
+<div class="subtitle">
+  <h1>つぶやき</h1>
+</div>
+<p><%= notice %></p>
+<div class="tweet">
+  <%= link_to 'つぶやく', new_post_path %>
+</div>
+<br>
+<table>
+  <tr>
+    <th>内容</th>
+  </tr>
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.content %></td>
+    <td><%= link_to '確認', post_path(post.id) %></td>
+    <td><%= link_to "編集", edit_post_path(post.id), data: { confirm: '本当に編集していいですか？' } %></td>
+    <td><%= link_to '削除', post_path(post.id), method: :delete, data: { confirm: '本当に削除していいですか？' } %></td>
+  </tr>
+<% end %>
+</table>
