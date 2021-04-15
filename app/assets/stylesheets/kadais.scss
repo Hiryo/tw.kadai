@@ -1,3 +1,32 @@
 // Place all the styles related to the kadais controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.subtitle {
+  text-align: center;
+}
+header {
+  text-align: center;
+  background-color: cornflowerblue;
+}
+.wrapper {
+  min-width: 100vh;
+  position: relative;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+}
+footer {
+  text-align: center;
+  background-color: cornflowerblue;
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+}
+body {
+  background-color: lightblue;
+  margin: 0 auto;
+}
+.tweet {
+  text-align: center;
+}
